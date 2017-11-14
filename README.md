@@ -4,6 +4,7 @@ In the ansible.cfg we have edited the inventory line to use the hosts fil in thi
 
 ``
 inventory      = hosts
+
 -- Default settings
 inventory      = /etc/ansible/hosts
 ``
