@@ -1,0 +1,14 @@
+- name: "Installing VIM"
+  yum:
+    name: vim
+    state: latest
+
+- name: "Installing GIT"
+  yum:
+    name: git
+    state: latest
+
+- name: "Installing Docker"
+  yum:
+    name: docker
+    state: latest
