@@ -4,7 +4,7 @@ In the ansible.cfg we have edited the inventory line to use the hosts fil in thi
 
 ``
 inventory      = hosts
-## Default settings
+-- Default settings
 inventory      = /etc/ansible/hosts
 ``
 
@@ -32,6 +32,7 @@ playbook-taks.yml
 
 ### Playbook example combines with roles and tasks
 Copy over app, yum installations, installing consul and running consul on host
+
 ``
 playbook.yml
 ``
