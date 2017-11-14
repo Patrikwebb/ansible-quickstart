@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes
+  roles:
+  - base
+  - app
+  tasks:
+    - include: tasks/consul.yml
+
+    # Start consul
+    - name: dev. Start up Consul
+      shell: nohup consul agent -bind=127.0.0.1 \
+        -data-dir /var/local/consul/data -node development \
+        >> /var/local/consul/logs/stdout \
+        2>> /var/local/consul/logs/stderr &
