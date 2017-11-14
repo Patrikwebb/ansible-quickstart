@@ -4,9 +4,6 @@ In the ansible.cfg we have edited the inventory line to use the hosts fil in thi
 
 ``
 inventory      = hosts
-
--- Default settings
-inventory      = /etc/ansible/hosts
 ``
 
 In our hosts file we specify the target host we wanna run Ansbile on, in this case we have a server up on the ip adress 192.168.1.250 and we will run the playbook as the user ansible on that host.
